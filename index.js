@@ -63,18 +63,33 @@
 //kg`)
 //5-6-7-
 
-const student = {
-    name:'mike',
+//const student = {
+//    name:'mike',
+//}
+
+//const students = [
+//    'jhon',
+//    student,
+//     '17',
+//    '72,30',
+//     'false'
+//]
+//console.log (students[1])
+
+//Funções/function
+//function sopposedpoem() {
+   // console.log("assim como o moir do astros se curva na presença da dama lua eu me curvo diante da tua beleza")
+   // console.log('o folego divino o maior ato de amor, dizer que foi o maior ato de amor da umanidade seria uma erezia pois a humanida ja mas sera capas de entender o que entre o ifinito sem pedir nada')
+//}
+
+//sopposedpoem()
+
+//fuction expression 
+const sun = function(number1, number2) {
+    console.log (number1 + number2)
 }
 
-const students = [
-    'jhon',
-    student,
-     '17',
-     '72,30',
-     'false'
-]
-console.log (students[1])
-
-
-
+let number1 = 34
+let number2 = 25
+sun(4, 6)
+ console.log(`o numero 1 é ${number1}`)
