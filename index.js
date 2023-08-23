@@ -86,10 +86,20 @@
 
 //fuction expression 
 const sun = function(number1, number2) {
-    console.log (number1 + number2)
+   let total = number1 + number2
+    return total
 }
 
 let number1 = 34
 let number2 = 25
 sun(4, 6)
- console.log(`o numero 1 é ${number1}`)
+console.log(`o numero 1 é ${number1}`)
+console.log(`a soma é ${sun(number1, number2)}`)
+ //EX2:
+function fazersuco(fruta1, fruta2) {
+    return (fruta1 + fruta2)
+ }
+
+ const copo = fazersuco('banana', 'maça')
+
+ console.log(copo)
