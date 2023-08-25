@@ -85,21 +85,42 @@
 //sopposedpoem()
 
 //fuction expression 
-const sun = function(number1, number2) {
-   let total = number1 + number2
-    return total
+//const sun = function(number1, number2) {
+//   let total = number1 + number2
+//    return total
+//}
+
+//let number1 = 34
+//let number2 = 25
+//sun(4, 6)
+//console.log(`o numero 1 é ${number1}`)
+//console.log(`a soma é ${sun(number1, number2)}`)
+ //EX2:
+//function fazersuco(fruta1, fruta2) {
+//    return (fruta1 + fruta2)
+// }
+
+// const copo = fazersuco('banana', 'maça')
+
+// console.log(copo)
+
+//arrow fuction
+//const sayMyName = () => {
+
+//  console.log('mike')
+//}
+
+//callback function
+function sayMyName(name) {
+   console.log('ants de executar a funcao callback')
+   
+   name()
+
+   console.log('depois de executar a callback')
 }
 
-let number1 = 34
-let number2 = 25
-sun(4, 6)
-console.log(`o numero 1 é ${number1}`)
-console.log(`a soma é ${sun(number1, number2)}`)
- //EX2:
-function fazersuco(fruta1, fruta2) {
-    return (fruta1 + fruta2)
- }
-
- const copo = fazersuco('banana', 'maça')
-
- console.log(copo)
+sayMyName(
+   () => {
+      console.log('estou em uma callback')
+   }
+)
