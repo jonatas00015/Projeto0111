@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/assets/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#container {
+    text-align: center;
+}
+ #oa {
+    color: white;
+ }
+
+ ul {
+    margin: 40px 0 0 0;
+ }
+
+ ul li{
+    border: 1px solid red;
+ }
+
