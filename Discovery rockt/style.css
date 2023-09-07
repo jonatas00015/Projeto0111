@@ -13,6 +13,8 @@ body {
 
 #container {
     text-align: center;
+    width: 360px;
+    border-radius: 1px solid red;
 }
  #oa {
     color: white;
