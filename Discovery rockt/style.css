@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -14,17 +15,40 @@ body {
 #container {
     text-align: center;
     width: 360px;
-    border-radius: 1px solid red;
+    margin: auto;
 }
  #oa {
     color: white;
  }
 
- ul {
+ #links {
     margin: 40px 0 0 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
  }
 
- ul li{
+ #links li{
+    background-image: linear-gradient 50% (#FFFFFF);
     border: 1px solid red;
+    width: 540px;
+    padding: 16px 0;
+    margin: 8px 0;
+    text-align: center;
+    border-radius: 8px;
+     
  }
 
+ #social {
+    margin: 40px 0 0 0;
+    text-align: center;
+    display: flex;
+    width: 588px;
+    -ms-flex-align: center;
+ }
+
+#social li {
+    margin: auto;
+    text-align: center;
+
+}
