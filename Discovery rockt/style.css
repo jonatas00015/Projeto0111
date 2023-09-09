@@ -17,8 +17,12 @@ body {
     width: 360px;
     margin: auto;
 }
+
+
+
  #oa {
     color: white;
+    display: block;
  }
 
  #links {
@@ -40,15 +44,21 @@ body {
  }
 
  #social {
-    margin: 40px 0 0 0;
+    margin: auto;
     text-align: center;
     display: flex;
-    width: 588px;
-    -ms-flex-align: center;
+    align-items: center;
+    width: 580px;
+    padding: 24px 160px;
  }
 
 #social li {
-    margin: auto;
     text-align: center;
+    margin: auto;
+}
 
+#agradecimentos {
+    text-align: center;
+    color: white;
+    margin: 24px 0;
 }
