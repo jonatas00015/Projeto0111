@@ -5,8 +5,31 @@
     list-style: none;
 }
 
+:root {
+   --text-color: white;
+   --bg-url: url(assets/assets/bg-desktop.jpg);
+   --stroke-color: rgba(255, 255, 255, 0.5);
+   --surface-color: rgba(255, 255, 255, 0.1);
+   --surface-color-houver: rgba(255, 255, 255, 0.02);
+   --hightli-color: rgba(255, 255, 255, 0.2);
+   --switch-bg-url: url(assets/assets/moon-stars.svg);
+
+}
+
+.light {
+   --text-color: black;
+   --bg-url: url(assets/assets/bg-desktop-light.jpg);
+   --stroke-color: rgba(0, 0, 0, 0.5);
+   --surface-color: rgba(0, 0, 0, 0.05);
+   --surface-color-houver: rgba(0, 0, 0, 0.02);
+   --hightli-color: rgba(0, 0, 0, 0.2);
+   --switch-bg-url: url(assets/assets/sun.svg);
+
+
+}
+
 body {
-    background-image: url(assets/assets/bg-desktop.jpg);
+    background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -19,14 +42,51 @@ body {
     padding: 0 24px;
 }
 
+#Switch {
+   position: relative;
+   width: 64px;
+   margin: 0 auto;
+}
+
+#Switch button {
+   width: 32px;
+   height: 32px;
+   background: white var(--switch-bg-url) no-repeat center;
+   border-radius: 50%;
+   border: 0;
+
+   position: absolute;
+   top: 50%;
+   z-index: 1;
+   transform: translateY(-50%);
+
+}
+
+.light #switch button {
+   right: 0;
+   left: initial;
+}
+
+
+
+span {
+   display: block;
+   width: 64px;
+   height: 24px;
+   background: var(--surface-color);
+   border: 1px solid var(--stroke-color);
+   border-radius: 32px;
+}
+
 a {
-    color: white;
+    color: var(--text-color);
     font-family: "inter", sans-serif;
 }
 
  #oa {
-    color: white;
+    color: var(--text-color);
     display: block;
+    margin: 0 0 24px 0;
  }
 
  #links {
@@ -43,8 +103,8 @@ a {
     padding: 16px 24px;
 
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 
@@ -55,8 +115,8 @@ a {
  }
 
  #links li a:hover {
-    background: rgba(255, 255, 255, 0.5);
-    border: 1.5px solid white;
+    background: var(--surface-color-houver);
+    border: 1.5px solid var(--text-color);
  }
 
  #social {    
@@ -78,8 +138,13 @@ a {
 
  }
 
+ #social li a img {
+   background: var(--text-color);
+
+ }
+
  #social a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--hightli-color);
     padding: 16px;
     border-radius: 50%;
  }
@@ -88,6 +153,7 @@ a {
 
 #agradecimentos {
     text-align: center;
-    color: white;
+    color: var(--text-color);
     margin: 24px 0;
 }
+
