@@ -33,22 +33,29 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    height: 100vh;
+
+}
+
+.imgavatar{
+   width: 112px;
 }
 
 #container {
     text-align: center;
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: auto;
     padding: 0 24px;
 }
 
-#Switch {
+.Switch {
    position: relative;
    width: 64px;
    margin: 0 auto;
 }
 
-#Switch button {
+.Switch button {
    width: 32px;
    height: 32px;
    background: white var(--switch-bg-url) no-repeat center;
@@ -61,11 +68,12 @@ body {
    z-index: 1;
    transform: translateY(-50%);
 
+   animation: slide-back 0.3s;
+
 }
 
-button {
-   right: 0;
-   left: initial;
+.light .switch button {
+   animation:  slide-in 0.4s forwards;
 }
 
 
@@ -140,12 +148,12 @@ a {
  }
 
  #social li a img {
-   background: var(--text-color);
+   color: var(--text-color);
 
  }
 
  #social a:hover {
-    background: var(--hightli-color);
+    color: var(--hightli-color);
     padding: 16px;
     border-radius: 50%;
  }
@@ -158,3 +166,22 @@ a {
     margin: 24px 0;
 }
 
+@keyframes slide-in {
+   from {
+      left: 0;          
+   }
+
+   to {
+      left: 50%;
+   }
+}
+
+@keyframes slide-back {
+   from {
+      left: 50%;          
+   }
+
+   to {
+      left: 0;
+   }
+}
