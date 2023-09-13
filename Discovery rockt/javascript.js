@@ -17,4 +17,13 @@ function toggleMode() {
         img.settAtribute("src", "assets/assets/Avatar.png")
     }
 
+    const a = document.querySelector("#oa")
+
+    if(html.classList.contains("light")) {
+        a.setAttribute("p", "@Jonjom")
+    } else {
+        a.settAtribute("p", "@maixbrito")
+    }
+
+
 }
